@@ -1,17 +1,20 @@
 # FTP Manager Python Package
 
-The **FTP Manager** Python package provides a convenient and easy-to-use interface for managing files on FTP servers. It simplifies tasks such as listing folders, uploading files, downloading files, and creating new folders on the FTP server. Whether you're dealing with large datasets or just a few files, this package makes FTP file management straightforward and efficient.
+The **FTP Manager** Python package simplifies managing files on FTP servers. It provides easy-to-use functions for listing folders, uploading files, downloading files, and creating new folders on the FTP server. Whether you're handling large datasets or a few files, this package streamlines FTP file management tasks.
 
 ## Installation
 
 You can install the **FTP Manager** package via pip:
 
-```bash
-pip install FTP_manager
+``` bash
+pip install FTP_manager 
 
-Usage
+```
 
+## Usage
 Here's how you can use the FTP Manager package in your Python projects:
+
+``` python
 
 from FTP_manager import FTPManager
 
@@ -42,3 +45,22 @@ print(downloaded_data)
 new_folder_name = 'new_folder'
 ftp_manager.create_folder(new_folder_name)
 
+```
+
+## Features
+
+**List Folders**: Easily list folders on the FTP server.<br>
+**Upload Files**: Upload Pandas DataFrames as CSV files to the FTP server.<br>
+**Download Files**: Download CSV files from the FTP server as Pandas DataFrames.<br>
+**Create Folders**: Create new folders on the FTP server.
+Dependencies
+
+The FTP Manager package requires the following dependencies:
+
+' pandas '
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Issues and Contributions
+For issues and feature requests, please [open an issue](https://github.com/mgutale/FTP_manager/issues) in the GitHub repository. Contributions are welcome; you can [create a pull request](https://github.com/mgutale/FTP_manager/pulls) with your changes.
